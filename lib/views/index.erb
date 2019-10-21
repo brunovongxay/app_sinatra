@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+  <header>
+  <nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">Gossip App</a>
+</nav>
+  </header>
+  <br>
+  <div class="container">
+    <div class="center">
+        <div class="text-center">
+    <h1>Mon super site de gossip, depuis le dossier views !</h1>
+    <a href='/gossips/new/'>New gossip</a>
+    <br>
+    <a href='/gossips/:id/'>Show un potin</a>
+    <% gossips.each do |gossip| %>
+        <p>
+          <%= gossip.author %><br/>
+          <%= gossip.content %>
+        </p>
+      <% end %>
+      </div>
+    </div>
+  </div>
+      
+  </body>
+</html>
