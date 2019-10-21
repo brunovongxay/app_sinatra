@@ -2,7 +2,8 @@
 
 Pour lancer l'application :
 $ bundle install
-$ shotgun -p 4567 (laissez tourner le terminal en fond et naviguez sur l'application à partir de votre port local : localhost:4567)
+$ shotgun -p 4567 
+naviguatotion sur l'application à partir de votre port local : localhost:4567
 
 Page d'index :
 
